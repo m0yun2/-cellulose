@@ -1,0 +1,178 @@
+\hypertarget{class_v_e_s_t_a}{}\doxysection{V\+E\+S\+TA Class Reference}
+\label{class_v_e_s_t_a}\index{VESTA@{VESTA}}
+
+
+\mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} で作ったcrytak structure factor のデータをグラフにする  
+
+
+
+
+{\ttfamily \#include $<$V\+E\+S\+T\+A.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_a521aaae12b9aa44dddaa0228f0a2b0ad}\label{class_v_e_s_t_a_a521aaae12b9aa44dddaa0228f0a2b0ad}} 
+{\bfseries V\+E\+S\+TA} (int mode)
+\item 
+T\+Graph $\ast$ \mbox{\hyperlink{class_v_e_s_t_a_adc2858735d307277c87b9de3b4b1dad9}{Load\+Resolution}} (string filename)
+\begin{DoxyCompactList}\small\item\em T\+A\+I\+K\+AN のQ Resolution を読み込む \end{DoxyCompactList}\item 
+T\+Graph $\ast$ \mbox{\hyperlink{class_v_e_s_t_a_ad04763867d42fd11432d3ed239f40b94}{Load\+Structure}} (string filename)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} で作った\+Structurefactor を読み込む \end{DoxyCompactList}\item 
+T\+Graph $\ast$ \mbox{\hyperlink{class_v_e_s_t_a_a1c7c392cc2c4ba681124dd492198f6d9}{Load\+Gaus\+Graph}} (string filename)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} の棒グラフをガウスにしたデータが保存されている.\+txt を読み込んで\+T\+Graph にする。 \end{DoxyCompactList}\item 
+T\+Graph $\ast$ \mbox{\hyperlink{class_v_e_s_t_a_aab211d0ed00c97b453b30f31a57669d3}{Analysis\+V\+E\+S\+TA}} (int polindex, int mode)
+\begin{DoxyCompactList}\small\item\em Asymmetry, Self Term, Cross Term, Sel + Cross term を求める \end{DoxyCompactList}\item 
+T\+Graph $\ast$ \mbox{\hyperlink{class_v_e_s_t_a_aa69764cb65560cfae48b77fce639bf29}{Set\+Gaus}} (T\+Graph $\ast$sg)
+\begin{DoxyCompactList}\small\item\em T\+Graph をガウス化させる \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_e_s_t_a_aaae2bead4e0af61bc4b5fb299019c8d4}{Graph\+Output}} (string file, T\+Graph $\ast$g)
+\begin{DoxyCompactList}\small\item\em T\+Graph のデータを.\+txt に \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_a6f915f2d7a89b76adc6c5928b03fd7bd}\label{class_v_e_s_t_a_a6f915f2d7a89b76adc6c5928b03fd7bd}} 
+T\+Graph $\ast$ {\bfseries gres\+M\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_aaa702537a09b4d95a838fd9c11e8657b}\label{class_v_e_s_t_a_aaa702537a09b4d95a838fd9c11e8657b}} 
+T\+Graph $\ast$ {\bfseries gres\+B\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_a09c5d98954ca097e8a81c9404ddcb905}\label{class_v_e_s_t_a_a09c5d98954ca097e8a81c9404ddcb905}} 
+vector$<$ T\+Graph $\ast$ $>$ {\bfseries vgaus\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_a198003af18f99a15788407afd47cfcc1}\label{class_v_e_s_t_a_a198003af18f99a15788407afd47cfcc1}} 
+vector$<$ T\+Graph $\ast$ $>$ {\bfseries vasy\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_afdff139c99dd5f581fc5394b5f7350a6}\label{class_v_e_s_t_a_afdff139c99dd5f581fc5394b5f7350a6}} 
+vector$<$ T\+Graph $\ast$ $>$ {\bfseries vself\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_af35b0334f2dd2cfb16010e668c418307}\label{class_v_e_s_t_a_af35b0334f2dd2cfb16010e668c418307}} 
+vector$<$ T\+Graph $\ast$ $>$ {\bfseries vcross\+\_\+}
+\item 
+\mbox{\Hypertarget{class_v_e_s_t_a_a9e415a76f238c5d99af384bed739250b}\label{class_v_e_s_t_a_a9e415a76f238c5d99af384bed739250b}} 
+vector$<$ T\+Graph $\ast$ $>$ {\bfseries vmix\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} で作ったcrytak structure factor のデータをグラフにする 
+
+それぞれの\+Qがの偏極度依存性や、\+T\+A\+I\+K\+A\+NでのI vs Q のグラフを作る 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_e_s_t_a_aab211d0ed00c97b453b30f31a57669d3}\label{class_v_e_s_t_a_aab211d0ed00c97b453b30f31a57669d3}} 
+\index{VESTA@{VESTA}!AnalysisVESTA@{AnalysisVESTA}}
+\index{AnalysisVESTA@{AnalysisVESTA}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{AnalysisVESTA()}{AnalysisVESTA()}}
+{\footnotesize\ttfamily T\+Graph $\ast$ V\+E\+S\+T\+A\+::\+Analysis\+V\+E\+S\+TA (\begin{DoxyParamCaption}\item[{int}]{npolindex,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Asymmetry, Self Term, Cross Term, Sel + Cross term を求める 
+
+
+\begin{DoxyParams}{Parameters}
+{\em npolindex} & \+: 解析したい偏極度に相当するvstr\+\_\+ の\+Index。\+Negative のものを選ぶ。 \\
+\hline
+{\em mode} & \+: 解析モード, 0 \+: Asymmetry, 1 \+: mix, 2 \+: Self, 3 \+: cross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I vs Q の\+T\+Graph @detail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_e_s_t_a_aaae2bead4e0af61bc4b5fb299019c8d4}\label{class_v_e_s_t_a_aaae2bead4e0af61bc4b5fb299019c8d4}} 
+\index{VESTA@{VESTA}!GraphOutput@{GraphOutput}}
+\index{GraphOutput@{GraphOutput}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{GraphOutput()}{GraphOutput()}}
+{\footnotesize\ttfamily void V\+E\+S\+T\+A\+::\+Graph\+Output (\begin{DoxyParamCaption}\item[{string}]{file,  }\item[{T\+Graph $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+T\+Graph のデータを.\+txt に 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & 保存するファイル名 \\
+\hline
+{\em g} & \+: .txt にしたい\+T\+Graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Q \char`\"{}\textbackslash{}t\char`\"{} I の.\+txt @detail タブ区切りでQ I の.\+txt にする 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_e_s_t_a_a1c7c392cc2c4ba681124dd492198f6d9}\label{class_v_e_s_t_a_a1c7c392cc2c4ba681124dd492198f6d9}} 
+\index{VESTA@{VESTA}!LoadGausGraph@{LoadGausGraph}}
+\index{LoadGausGraph@{LoadGausGraph}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{LoadGausGraph()}{LoadGausGraph()}}
+{\footnotesize\ttfamily T\+Graph $\ast$ V\+E\+S\+T\+A\+::\+Load\+Gaus\+Graph (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} の棒グラフをガウスにしたデータが保存されている.\+txt を読み込んで\+T\+Graph にする。 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fiilname} & \+: T\+Graph にしたい \+\_\+gaus.\+txt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I vs Q の\+T\+Graph @detail コンパイルするたびに\+Load\+Structure を呼ぶと非常に動作が遅い, 一度コンパイルした際に\+Load\+Structure のデータを\+\_\+gaus.\+txt に保存しておく。以降は\+\_\+gaus.\+txt を呼び出すことで処理を軽くする。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_e_s_t_a_adc2858735d307277c87b9de3b4b1dad9}\label{class_v_e_s_t_a_adc2858735d307277c87b9de3b4b1dad9}} 
+\index{VESTA@{VESTA}!LoadResolution@{LoadResolution}}
+\index{LoadResolution@{LoadResolution}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{LoadResolution()}{LoadResolution()}}
+{\footnotesize\ttfamily T\+Graph $\ast$ V\+E\+S\+T\+A\+::\+Load\+Resolution (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+T\+A\+I\+K\+AN のQ Resolution を読み込む 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fiilname} & \+: T\+A\+I\+K\+AN のQ resokution のデータ(高田さんの論文より) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Qresolution vs. Q の\+T\+Graph @detail 引数で指定するファイルを\+T\+Graph に直す。\+Middle bank と\+Backward bank で\+Resoluton が変わる。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_e_s_t_a_ad04763867d42fd11432d3ed239f40b94}\label{class_v_e_s_t_a_ad04763867d42fd11432d3ed239f40b94}} 
+\index{VESTA@{VESTA}!LoadStructure@{LoadStructure}}
+\index{LoadStructure@{LoadStructure}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{LoadStructure()}{LoadStructure()}}
+{\footnotesize\ttfamily T\+Graph $\ast$ V\+E\+S\+T\+A\+::\+Load\+Structure (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} で作った\+Structurefactor を読み込む 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fiilname} & \+: \mbox{\hyperlink{class_v_e_s_t_a}{V\+E\+S\+TA}} でexport した.\+txt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I vs. Q の\+T\+Graph @detail 引数で指定するファイルを\+T\+Graph に直す。ローレンツファクターはq$^\wedge$\{-\/2\}, 同じd space に出るピークは足し合わせを行っている 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_e_s_t_a_aa69764cb65560cfae48b77fce639bf29}\label{class_v_e_s_t_a_aa69764cb65560cfae48b77fce639bf29}} 
+\index{VESTA@{VESTA}!SetGaus@{SetGaus}}
+\index{SetGaus@{SetGaus}!VESTA@{VESTA}}
+\doxysubsubsection{\texorpdfstring{SetGaus()}{SetGaus()}}
+{\footnotesize\ttfamily T\+Graph $\ast$ V\+E\+S\+T\+A\+::\+Set\+Gaus (\begin{DoxyParamCaption}\item[{T\+Graph $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+T\+Graph をガウス化させる 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fiilname} & \+: 基本的には\+Load\+Structure の棒グラフ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I(ガウス) vs. Q の\+T\+Graph @detail 引数で指定した\+T\+Graph をガウス幅をもたせた\+T\+Graph に直す。ガウスの幅は\+T\+A\+I\+K\+A\+Nの\+Qresolution で与える、つまり\+Load\+Resolution の\+T\+Graph を使う 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+V\+E\+S\+T\+A.\+h\end{DoxyCompactItemize}
